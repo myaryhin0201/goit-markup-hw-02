@@ -87,12 +87,10 @@ body {
 .nav-list-title:hover{
     color:var(--lightblue-color);
 }
-.header-list {
+.header-list-contacts{
+    font-style:normal;
     font-weight: 500;
     font-size: 14px;
-    font-style:normal;
-}
-.header-list-contacts{
     color: var(--gray-color);
 }
 .header-list-contacts:hover{
@@ -189,12 +187,10 @@ body {
     font-weight: 700;
     font-size: 26px;
 }
-.footer-list {
-    font-weight: 500;
-    font-style:normal;
-    font-size: 14px;
-}
 .footer-list-contacts{
+    font-style:normal;
+    font-weight: 500;
+    font-size: 14px;
     color: var(--gray-color);
 }
 .footer-list-contacts:hover{
