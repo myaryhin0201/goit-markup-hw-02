@@ -3,34 +3,38 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Main page</title>
+		<title>Portfolio</title>
+		<link rel="stylesheet" href="./css/normalize.css">
+		<link rel="stylesheet" href="./css/styles.css">
 	</head>
 	<body>
 		<!--Шапка-->
-		<header>
-			<nav>
-				<a href="https://myaryhin0201.github.io/project-homework1-goit/"><span class="login">Web</span>Studio</a>
-				<ul>
-					<li><a href="https://myaryhin0201.github.io/project-homework1-goit/">Студия</a></li>
-					<li><a href="/portfolio.html">Портфолио</a></li>
-					<li><a href="https://myaryhin0201.github.io/project-homework1-goit/">Контакты</a></li>
+		<header class="header-content">
+			<nav class="navigation">
+				<a href="https://myaryhin0201.github.io/project-homework1-goit/" class="logo-title"><span class="logo">Web</span>Studio</a>
+				<ul class="nav-list">
+					<li><a href="https://myaryhin0201.github.io/project-homework1-goit/" class="nav-list-title">Студия</a></li>
+					<li><a href="/portfolio.html"class="nav-list-title">Портфолио</a></li>
+					<li><a href="https://myaryhin0201.github.io/project-homework1-goit/" class="nav-list-title">Контакты</a></li>
 				</ul>
 			</nav>
-			<ul>
-				<li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-				<li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+			<ul class="header-list">
+				<li><a href="mailto:info@devstudio.com" class="header-list-contacts">info@devstudio.com</a></li>
+				<li><a href="tel:+380961111111" class="header-list-contacts">+38 096 111 11 11</a></li>
 			</ul>
 		</header>
 		<!--Главное-->
-		<main>
-            <section>
-                <ul>
-                    <li>Все</li>
-                    <li>Веб-сайты</li>
-                    <li>Приложение</li>
-                    <li>Дизайн</li>
-                    <li>Маркетинг</li>
-                </ul>
+		<main class="main-portfolio">
+            <section class="content-portfolio">
+				<ul class="content-buttom">
+					<ul>
+						<li><button type="button" class="content-filter">Все</button></li>
+						<li><button type="button" class="content-filter">Веб-сайты</button></li>
+						<li><button type="button" class="content-filter">Приложение</button></li>
+						<li><button type="button" class="content-filter">Дизайн</button></li>
+						<li><button type="button" class="content-filter">Маркетинг</button></li>
+					</ul>
+				</ul>
             </section>
             <section>
                 <ul>
@@ -48,13 +52,15 @@
 			
 		</main>
 		<!--Футер-->
-		<footer>
-			<address>
-				<a href="https://myaryhin0201.github.io/project-homework1-goit/"><span class="login">Web</span>Studio</a>
-				<p>г. Киев, пр-т Леси Украинки, 26</p>
+		<footer class="footer">
+			<a href="https://myaryhin0201.github.io/project-homework1-goit/" class="logo-title-footer"><span class="logo">Web</span>Studio</a>
+			<address class="address">
+				г. Киев, пр-т Леси Украинки, 26
 			</address>
-			<p>info@example.com</p>
-			<p>+38 099 111 11 11</p>
+			<ul class="footer-list-contacts">
+				<li><a href="mailto:info@devstudio.com" class="footer-list-contacts">info@devstudio.com</a></li>
+				<li><a href="tel:+380961111111" class="footer-list-contacts">+38 096 111 11 11</a></li>
+			</ul>
 		</footer>
 	</body>
 </html>
