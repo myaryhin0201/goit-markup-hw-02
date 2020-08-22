@@ -3,30 +3,32 @@
     --white-color:#FFFFFF;
     --second-text-color:#757575;
     --main-text-color:#212121;
+    --back-color:#2F303A;
+    --lightgray-color:#F5F4FA;
+    --black-color:#000000;
 }
 body { 
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     color: var(--main-text-color);
     background-color:var(--white-color);
 }
 .logo-title{
     font-family: 'Raleway', sans-serif;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    color: #000000;
-    font-weight: 700; 
-    font-style:normal; 
+    color: var(--black-color);
+    font-weight: 700;
     font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .logo{
-    font-weight: 700;  
-    font-size: 26px;
-    font-style:normal;
     color:var(--lightblue-color);
 }
 .site-nav{
     font-weight: 500;
     font-size: 14px;
-    font-style:normal;
     letter-spacing: 0.02em;
 }
 .site-nav .link {
@@ -40,7 +42,6 @@ body {
     color:var(--lightblue-color);
 }
 .nav-list .contacts{
-    font-style:normal;
     font-weight: 500;
     font-size: 14px;
     color: var(--second-text-color);
@@ -49,23 +50,27 @@ body {
     color:var(--lightblue-color);
 }
 .hero{
-    background-color: #2F303A;
+    background-color: var(--back-color);
 }
 .hero .title{
     color: var(--white-color);
     font-weight: 900;
     font-size: 44px;
-    font-style:normal;
-    letter-spacing: 0.1em;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
 }
 .hero .button{
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    font-style:normal;
-    background-color:var(--lightblue-color);
+    line-height: 1.86;
     color: var(--white-color);
-    border: none;
     text-align: center;
+
+    background-color:var(--lightblue-color);
+    border: none;
     border-radius: 4px;
     padding: 10px 32px;
 }
@@ -77,25 +82,30 @@ body {
     display: none;
 }
 .section-list{
-    font-size: 14px;
-    font-style: normal;
     letter-spacing: 0.03em;
 }
 .section-list .title{
     font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
     color: var(--main-text-color);
+
+    text-transform: uppercase;
 }
 .section-list .text{
+    font-size: 14px;
+    line-height: 1.71;
     color: var(--second-text-color);
-    font-weight: 400;
 }
 .section-title{
     font-weight: 700;
     font-size: 36px;
-    font-style:normal;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
 }
-.section .team{
-    background-color: #F5F4FA;
+.section.team{
+    background-color: var(--lightgray-color);
 }
 .team-list{
     letter-spacing: 0.03em;
@@ -103,39 +113,37 @@ body {
 .team-list .title{
     font-weight: 500;
     font-size: 16px;
-    font-style:normal;
     color: var(--main-text-color);
 }
 .team-list .text{
-    font-weight: 400;
     font-size: 16px;
-    font-style:normal;
     color: var(--second-text-color);
 }
 .footer{
-    background-color: #2F303A;
+    background-color: var(--back-color);
 }
-.address{
-    color: var(--white-color);
-    font-weight: 400;
-    font-style:normal;
+.address{    
+    font-style: normal;
     font-size: 14px;
+    color: var(--white-color);
 }
 .footer .logo-title{
     font-family: 'Raleway', sans-serif;
-    font-style:normal;
-    color: var(--white-color);
     font-weight: 700;
+    line-height: 1.19;
     font-size: 26px;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
 }
 .filter .button{
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    font-style:normal;
-    background-color: #F5F4FA;
-    color: var(--main-text-color);
-    border: none;
     text-align: center;
+    color: var(--main-text-color);
+
+    background-color: var(--lightgray-color);
+    border: none;
     border-radius: 4px;
     padding: 6px 22px;
 }
@@ -144,16 +152,20 @@ body {
     color: var(--white-color);
 }
 .work-list .title{
-    font-style:normal;
     letter-spacing: 0.06em;
     font-weight: 700;
     font-size: 18px;
     color: var(--main-text-color);
 }
 .work-list .text{
-    font-style:normal;
-    font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
+}
+.work-list .text-onthe{
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+
+    display: none;
 }
